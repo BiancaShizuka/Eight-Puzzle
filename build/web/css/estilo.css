@@ -1,0 +1,127 @@
+body{
+    padding:0;
+    margin:0;
+}
+.div_principal{
+    min-height:100vh;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #1ac6ff, #b3ecff,#1ac6ff);
+}
+#div_info{
+    width:90%;
+    min-height: 100%;
+    margin:10px;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    
+}
+.div_principal h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:#0099e6;
+}
+.div_formPuzzle{
+    border: 2px solid #0099e6;
+    margin-top:60px;
+    width:30%;
+    background-color: #cceeff;
+    padding:30px;
+    border-radius: 10px;
+}
+#formEstFinal div input[type="number"]{
+    width:25px;
+    height: 25px;
+    font-size: 12px;
+}
+.div_select{
+    margin-top: 40px;
+}
+.div_btn{
+    margin-top:30px;
+}
+.div_btn input{
+    margin:10px;
+    padding:10px;
+    border: none;
+    font-size: 20px;
+    background-color: #00aaff;
+    color:#ffffff;
+    border-radius: 10px;
+}
+.div_btn input:hover{
+    background-color: #33bbff;
+}
+.div_resultEmb{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.div_puzzle{
+    background-color: #4dc3ff;
+    margin: 10px;
+}
+.div_linha{
+    display: flex;
+    flex-direction: inline;
+}.div_coluna{
+    width:60px;
+    height: 60px;
+    margin:3px;
+    background-color: #b3e6ff;
+}
+
+.div_resultBusca{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.backColor{
+    background-color: #ff80ff;
+    margin: 20px;
+    width:10vw;
+}
+#tipoBusca{
+    font-size: 25px;
+    border-radius: 10px;
+}
+.div_relatorio{
+    width:60%;
+    heigth:30vh;
+    background-color: #e6e6e6;
+    text-align: center;
+    font-size: 30px;
+}
+#div_formSelect{
+    display: none;
+}
+button{
+    display: none;
+    margin:10px;
+    padding:10px;
+    border: none;
+    font-size: 20px;
+    background-color: #0080ff;
+    color:#ffffff;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #33bbff;
+}
+#btn_embaralhar input [type=button]{
+    
+}
+
+
+

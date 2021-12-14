@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Eight Puzzle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="js/funcoes.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="div_principal">
+            <div class="div_formPuzzle">
+                <h1>Eight Puzzle</h1>
+                <form id="formEstFinal" class="est_formulario">
+                    <div>
+                        <input name="elem1" id="elem1" type="number" max="8" min="1" value="1"/>
+                        <input name="elem2" id="elem2" type="number" max="8" min="1" value="2"/>
+                        <input name="elem3" id="elem3" type="number" max="8" min="1" value="3"/>
+                    </div>
+                    <div>
+                        <input name="elem4" id="elem4" type="number" max="8" min="1" value="4"/>
+                        <input name="elem5" id="elem5" type="number" max="8" min="1" value="5"/>
+                        <input name="elem6" id="elem6" type="number" max="8" min="1" value="6"/>
+                    </div>
+                    <div>
+                        <input name="elem7" id="elem7" type="number" max="8" min="1" value="7"/>
+                        <input name="elem8" id="elem8" type="number" max="8" min="1" value="8"/>
+                        <input name="elem9" id="elem9" type="number" max="8" min="1"/>
+                    </div>
+                    <div id="div_erro">
+
+                    </div>
+                    <div class="div_btn">
+                        <input id="btn_embaralhar" type="button" onClick="Embaralhar()" value="Embaralhar"/>
+                    </div>
+                </form>
+            </div>
+            <div id="div_info">
+                <div class="div_resultEmb" id="resultEmb">
+
+                </div>
+                <div id="div_formSelect" >
+                    <form id="formBusca">
+                        <div class="div_select">
+                            <select name="tipoBusca" id="tipoBusca">
+                                <option name='tipoBusca' value="A">A* com distância de Manhattan</option>
+                                <option name='tipoBusca' value="B">Best First com qtde de peças</option>
+                            </select>
+                        </div>
+                        <div class="div_btn">
+                            <input type="button" onClick="Buscar()" value="Buscar"/>
+                        </div>
+                    </form>
+                </div>
+                <div id="div_erroBusca">
+
+                </div>
+                <div id="div_relatorio" class="div_relatorio">
+
+                </div>
+                <div class="div_resultBusca" id="resultBusca">
+
+                </div>
+                <button id="buttonNext" type="button" onClick="exibirPassos()">Next</button>
+            </div>
+        </div>
+    </body>
+</html>
